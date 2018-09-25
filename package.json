@@ -2,19 +2,14 @@
   "name": "oshop",
   "version": "0.0.0",
   "license": "MIT",
-  "main":"server.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall":"grunt sass:production && ng build --aot --prod"
-  },
-  "engines":{
-    "node":"~8.12.0",
-    "npm":"~6.4.1"
+    "postinstall":"ng build --aot --prod"
   },
   "dependencies": {
     "@angular/animations": "^4.2.4",
