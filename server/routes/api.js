@@ -1,8 +1,8 @@
 const express=require("express");
-const router=express.Router();
+const app=express.Router();
 
-router.get('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('api works');
 });
 
-module.exports =router;
+module.exports =app;
